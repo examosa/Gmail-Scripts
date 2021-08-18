@@ -1,0 +1,39 @@
+{
+  "name": "gmail-scripts",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Automation for mundane GMail tasks",
+  "keywords": [
+    "gmail",
+    "google",
+    "clasp",
+    "appsscript"
+  ],
+  "homepage": "https://github.com/Teomik129/Gmail-Scripts#readme",
+  "bugs": {
+    "url": "https://github.com/Teomik129/Gmail-Scripts/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Teomik129/Gmail-Scripts.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Jules Amosah",
+    "email": "teomik129@gmail.com"
+  },
+  "type": "module",
+  "scripts": {
+    "lint": "dprint fmt",
+    "test": "uvu . test.js",
+    "push": "clasp push",
+    "deploy": "redrun lint test push"
+  },
+  "devDependencies": {
+    "@google/clasp": "^2.4.1",
+    "dprint": "^0.15.4",
+    "redrun": "^9.0.1",
+    "sinon": "^11.1.2",
+    "uvu": "^0.5.1"
+  }
+}
