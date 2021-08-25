@@ -26,11 +26,13 @@
   "scripts": {
     "lint": "dprint fmt",
     "test": "uvu . test.js",
+    "build": "cpy main.js appsscript.json dist/",
     "push": "clasp push",
-    "deploy": "redrun lint test push"
+    "deploy": "redrun lint build push"
   },
   "devDependencies": {
     "@google/clasp": "^2.4.1",
+    "cpy-cli": "^3.1.1",
     "dprint": "^0.15.4",
     "redrun": "^9.0.1",
     "sinon": "^11.1.2",

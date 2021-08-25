@@ -8,7 +8,7 @@ const query = "test";
 const search = stub();
 const threadAction = fake();
 
-const act = bulkThreadAction.bind(null, query, threadAction);
+const act = () => bulkThreadAction(query, threadAction);
 
 global.GmailApp = {
   search,
